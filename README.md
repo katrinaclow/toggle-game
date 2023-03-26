@@ -115,10 +115,3 @@ There are unit-tests in the test directory and can be run through IntelliJ.
 The interface provided assumes that the game board is passed back and forth as Strings. In the String, "1" represents white, and "0" represents black. The order of the characters in the String is the same as the above order of the squares/buttons, i.e., the character at position 0 in the String is the 0 square/button, position 1 is the 1 square/button, etc. Thus the String "111111111" represents a game board with all 9 squares colored white. While the String "111001000" represents the target pattern in the above example image.
 
 There are $2^9=512$ possible board configurations (states). An exhaustive search from some board configuration leading to all possible other states will execute quick enough for the purposes of our game (provided cycles are avoided). 
-
-
-- Code design - separation of algorithms from specific implementations, proper use of classes and methods
-
-- Specific tests: Each of the above reference a specific set of tests in the ToggleGameEngineTest.java file. The FirstDeliverableTests are somewhat simple identity tests, BoardStatesTests are tests related to handling button clicks and updating the board, MinimumRequiredMoves tests involves properly determining the minimum number of required moves remaining. PathToTargetTests involves testing to determine if the path (button clicks required) to the target is working.
-
-Total grade: X / 10
